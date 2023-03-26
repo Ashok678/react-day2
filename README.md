@@ -8,11 +8,48 @@ In the project directory, you can run:
 
 ### `npm start`
 
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+# you will learn about routing 
+ first we need to install routing using
+ **import { BrowserRouter } from "react-router-dom";** in app.js
+  then we have to write:
+  `` <BrowserRouter>
+      <Routes>
+         <Route path='/' element = { <Home />}  >
+         <Route path='/About' element = { <About />} />
+         <Route path='/Contact' element = { <Contact/>} />
+         <Route path='*' element = {<Error />} />
+         </Route>
+      </Routes>
+    </BrowserRouter>``
+
+# component
+here i have written header code  
+`` <header>
+        <a href='#'>logo</a>
+        <nav>
+            <ul>
+                <li>
+                     <NavLink to="/" >Home</NavLink>
+                      </li>
+                <li> 
+                    <NavLink to="/about" >About</NavLink>
+                     </li>
+                <li> 
+                    <NavLink to="/contact" >Contact</NavLink>
+                     </li>
+            </ul>
+        </nav>
+    </header>``
+    from this i have taken header code to all home about and contact us session
+    
+
 
 ### `npm test`
 

@@ -19,7 +19,7 @@ You may also see any lint errors in the console.
 ## first we need to install routing using
  **import { BrowserRouter } from "react-router-dom";** in app.js
   then we have to write:
-  ``` <BrowserRouter>
+   <BrowserRouter>
       <Routes>
          <Route path='/' element = { <Home />}  >
          <Route path='/About' element = { <About />} />
@@ -27,7 +27,8 @@ You may also see any lint errors in the console.
          <Route path='*' element = {<Error />} />
          </Route>
       </Routes>
-    </BrowserRouter>```
+    </BrowserRouter>
+
 
 # component
 here i have written header code  

@@ -17,8 +17,11 @@ You may also see any lint errors in the console.
 
 # you will learn about routing 
 ## first we need to install routing using
- **import { BrowserRouter } from "react-router-dom";** in app.js
+```sh
+ import { BrowserRouter } from "react-router-dom";
+ ```in app.js
   then we have to write:
+  ``` sh
    <BrowserRouter>
       <Routes>
          <Route path='/' element = { <Home />}  >
@@ -28,11 +31,13 @@ You may also see any lint errors in the console.
          </Route>
       </Routes>
     </BrowserRouter>
+    ```
 
 
 # component
-here i have written header code  
-``` <header>
+## here i have written header code  
+```sh
+ <header>
         <a href='#'>logo</a>
         <nav>
             <ul>
@@ -47,8 +52,9 @@ here i have written header code
                      </li>
             </ul>
         </nav>
-    </header>```
-    from this i have taken header code to all home about and contact us session
+    </header>
+    ```
+ from this i have taken header code to all home about and contact us session
 
 
 

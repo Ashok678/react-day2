@@ -8,54 +8,11 @@ In the project directory, you can run:
 
 ### `npm start`
 
-
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-# you will learn about routing 
-## first we need to install routing using
-```sh
- import { BrowserRouter } from "react-router-dom";
- ```in app.js
-  then we have to write:
-  ``` sh
-   <BrowserRouter>
-      <Routes>
-         <Route path='/' element = { <Home />}  >
-         <Route path='/About' element = { <About />} />
-         <Route path='/Contact' element = { <Contact/>} />
-         <Route path='*' element = {<Error />} />
-         </Route>
-      </Routes>
-    </BrowserRouter>
-    ```
-
-
-# component
-## here i have written header code  
-```sh
- <header>
-        <a href='#'>logo</a>
-        <nav>
-            <ul>
-                <li>
-                     <NavLink to="/" >Home</NavLink>
-                      </li>
-                <li> 
-                    <NavLink to="/about" >About</NavLink>
-                     </li>
-                <li> 
-                    <NavLink to="/contact" >Contact</NavLink>
-                     </li>
-            </ul>
-        </nav>
-    </header>
-    ```
- from this i have taken header code to all home about and contact us session
-
 
 
 ### `npm test`
@@ -112,3 +69,80 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# you will learn about routing 
+## first we need to install routing using
+```
+ import { BrowserRouter } from "react-router-dom";
+ ```
+
+ Then in app .js we have to write:
+ here we have given nested router
+ 
+  ```
+  <BrowserRouter>
+      <Routes>
+         <Route path='/' element = { <Home />}  >
+         <Route path='/About' element = { <About />} />
+         <Route path='/Contact' element = { <Contact/>} />
+         <Route path='*' element = {<Error />} />
+         </Route>
+      </Routes>
+    </BrowserRouter>
+   ```
+
+
+
+
+
+
+# create coponent component
+
+`
+header.js
+`
+### Here i have written header code  
+
+``` 
+<header>
+        <a href='#'>logo</a>
+        <nav>
+            <ul>
+                <li>
+                     <NavLink to="/" >Home</NavLink>
+                      </li>
+                <li> 
+                    <NavLink to="/about" >About</NavLink>
+                     </li>
+                <li> 
+                    <NavLink to="/contact" >Contact</NavLink>
+                     </li>
+            </ul>
+        </nav>
+    </header>
+```
+### calling header in home.js
+
+```
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import Header from './component/header';
+
+const Home = () => {
+  return (
+    <>
+   < Header/>
+   < Outlet />
+    </>
+  )
+}
+```
+with the help of outlet  parent route elements to render their child route elements. 
+with `about.js` `contact.js` `home.js` 
+
+
+
+
+
+

@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const About = () => {
     const nevigate =useNavigate();
     const goToContact = () =>{
-        nevigate("/");
+        nevigate("/contact");
 
     }
   return (

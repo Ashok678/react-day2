@@ -31,8 +31,8 @@ You may also see any lint errors in the console.
 
 
 # component
-here i have written header code  
-``` <header>
+## here i have written header code  
+ <header>
         <a href='#'>logo</a>
         <nav>
             <ul>
@@ -47,7 +47,7 @@ here i have written header code
                      </li>
             </ul>
         </nav>
-    </header>```
+    </header>
     from this i have taken header code to all home about and contact us session
 
 

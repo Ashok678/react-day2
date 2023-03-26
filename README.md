@@ -16,10 +16,10 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 # you will learn about routing 
- first we need to install routing using
+## first we need to install routing using
  **import { BrowserRouter } from "react-router-dom";** in app.js
   then we have to write:
-  `` <BrowserRouter>
+  ``` <BrowserRouter>
       <Routes>
          <Route path='/' element = { <Home />}  >
          <Route path='/About' element = { <About />} />
@@ -27,11 +27,11 @@ You may also see any lint errors in the console.
          <Route path='*' element = {<Error />} />
          </Route>
       </Routes>
-    </BrowserRouter>``
+    </BrowserRouter>```
 
 # component
 here i have written header code  
-`` <header>
+``` <header>
         <a href='#'>logo</a>
         <nav>
             <ul>
@@ -46,9 +46,9 @@ here i have written header code
                      </li>
             </ul>
         </nav>
-    </header>``
+    </header>```
     from this i have taken header code to all home about and contact us session
-    
+
 
 
 ### `npm test`

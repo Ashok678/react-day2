@@ -1,0 +1,11 @@
+nav ul li a{
+  text-decoration: none;
+  list-style: none;
+}
+nav ul{
+  list-style: none;
+  text-decoration: none;
+}
+.active{
+  color: rgb(190, 244, 29);
+}
